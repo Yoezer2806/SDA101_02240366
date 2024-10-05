@@ -1,0 +1,61 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 251, 255);
+    margin: 0%;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset;
+    width: 400px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+form{
+    display: flexbox;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+    color: blue;
+}
+
+input[type="text"],
+textarea,
+select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+textarea{
+resize: calc;
+}
+
+button{
+    padding: 10px;
+    background-color: green;
+    font-size: larger;
+    cursor: arrow;
+}
+
+button:hover{
+    background-color: brown;
+}
+
