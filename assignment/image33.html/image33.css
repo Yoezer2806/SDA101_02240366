@@ -1,0 +1,197 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+header {
+    position: relative;
+    background: url('/practicalimages/sda.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #e68900;
+}
+
+/* Container for all sections */
+.container {
+    padding: 50px 20px;
+}
+
+/* Section Styles */
+.section {
+    margin: 20px 0;
+}
+
+/* Small Groups Section */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Overlay for Text */
+h5, p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.section div {
+    position: relative;
+    margin: 20px 0;
+}
+
+.section div img {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover;
+}
+
+.section div h5 {
+    top: 10px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.section div p {
+    bottom: 10px;
+    font-size: 1rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Faith and Community Section */
+.section div:nth-child(4) {
+    text-align: center;
+}
+
+.section div:nth-child(4) img {
+    height: 250px; /* Adjust as necessary */
+}
+
+/* Volunteer and Podcast Section */
+.section div:nth-child(5), .section div:nth-child(6) {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.section div:nth-child(5) img, .section div:nth-child(6) img {
+    width: 48%;
+    height: 200px;
+}
+
+/* Contact Us Section */
+.section div:last-child {
+    text-align: center;
+    padding: 20px;
+}
+
+.section input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section button:hover {
+    background-color: #e68900;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section div {
+        margin: 10px 0;
+    }
+
+    .section div img {
+        height: auto; /* Allow images to resize */
+    }
+
+    .section div:nth-child(5), .section div:nth-child(6) {
+        flex-direction: column;
+    }
+
+    .section div:nth-child(5) img, .section div:nth-child(6) img {
+        width: 100%;
+        height: 200px; /* Adjust for smaller screens */
+    }
+}
