@@ -1,0 +1,3 @@
+This HTML code displays a simple "Grade Record" table listing students' first names, last names, student numbers, and grades. The table structure is organized with <tr> tags for rows and <th> for headers, ensuring the data is clear and easy to read.
+
+An external CSS file (table.css) is linked to style the table, helping control layout and design. This separation of HTML and CSS keeps the code clean and maintainable.
